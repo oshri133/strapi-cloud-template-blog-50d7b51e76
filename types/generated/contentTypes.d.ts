@@ -411,8 +411,6 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
         ]
       >;
     About_recipe: Attribute.RichText;
-    preparation_time: Attribute.Time;
-    Total_time: Attribute.Time;
     select_Nutritional_values: Attribute.Component<'nutritional-values.nutritional-values'>;
     difficulty: Attribute.String;
     createdAt: Attribute.DateTime;

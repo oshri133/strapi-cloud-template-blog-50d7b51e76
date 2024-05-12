@@ -63,12 +63,6 @@
     "About_recipe": {
       "type": "richtext"
     },
-    "preparation_time": {
-      "type": "time"
-    },
-    "Total_time": {
-      "type": "time"
-    },
     "select_Nutritional_values": {
       "displayName": "nutritional_values",
       "type": "component",
