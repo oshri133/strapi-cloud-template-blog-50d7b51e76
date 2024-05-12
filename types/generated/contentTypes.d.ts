@@ -416,6 +416,10 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
     prepare_time: Attribute.Time;
     total_time: Attribute.Time;
     howtomake: Attribute.Component<'how-to-make.how-to-make', true>;
+    Ingredients_and_quantity: Attribute.Component<
+      'ingredients-andq-uantity.ingredients-and-quantity',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

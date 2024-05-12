@@ -12,6 +12,19 @@ export interface HowToMakeHowToMake extends Schema.Component {
   };
 }
 
+export interface IngredientsAndqUantityIngredientsAndQuantity
+  extends Schema.Component {
+  collectionName: 'components_ingredients_andq_uantity_ingredients_and_quantities';
+  info: {
+    displayName: 'Ingredients and quantity';
+  };
+  attributes: {
+    image: Attribute.Media;
+    Ingredients: Attribute.String;
+    quantity: Attribute.String;
+  };
+}
+
 export interface NutritionalValuesNutritionalValues extends Schema.Component {
   collectionName: 'components_nutritional_values_nutritional_values';
   info: {
@@ -54,6 +67,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'how-to-make.how-to-make': HowToMakeHowToMake;
+      'ingredients-andq-uantity.ingredients-and-quantity': IngredientsAndqUantityIngredientsAndQuantity;
       'nutritional-values.nutritional-values': NutritionalValuesNutritionalValues;
     }
   }

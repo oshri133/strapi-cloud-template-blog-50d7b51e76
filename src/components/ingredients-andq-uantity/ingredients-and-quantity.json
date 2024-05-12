@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ingredients_andq_uantity_ingredients_and_quantities",
+  "info": {
+    "displayName": "Ingredients and quantity"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Ingredients": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    }
+  }
+}
