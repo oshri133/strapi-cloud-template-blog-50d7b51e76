@@ -420,6 +420,8 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
       'ingredients-andq-uantity.ingredients-and-quantity',
       true
     >;
+    start_day: Attribute.Date;
+    end_day: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

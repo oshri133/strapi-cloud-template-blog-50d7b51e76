@@ -87,6 +87,12 @@
       "type": "component",
       "repeatable": true,
       "component": "ingredients-andq-uantity.ingredients-and-quantity"
+    },
+    "start_day": {
+      "type": "date"
+    },
+    "end_day": {
+      "type": "date"
     }
   }
 }
