@@ -77,6 +77,11 @@
     },
     "total_time": {
       "type": "time"
+    },
+    "howtomake": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-to-make.how-to-make"
     }
   }
 }

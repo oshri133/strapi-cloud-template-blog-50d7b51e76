@@ -415,6 +415,7 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
     difficulty: Attribute.String;
     prepare_time: Attribute.Time;
     total_time: Attribute.Time;
+    howtomake: Attribute.Component<'how-to-make.how-to-make', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
