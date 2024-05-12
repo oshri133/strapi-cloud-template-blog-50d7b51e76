@@ -1,22 +1,5 @@
 {
-  "dependencies": {
-    "@strapi/plugin-cloud": "4.21.1",
-    "@strapi/plugin-graphql": "^4.0.5",
-    "@strapi/plugin-i18n": "4.21.1",
-    "@strapi/plugin-users-permissions": "4.21.1",
-    "@strapi/strapi": "4.21.1",
-    "better-sqlite3": "8.6.0",
-    "fs-extra": "^10.0.0",
-    "lodash.set": "^4.3.2",
-    "mime-types": "^2.1.27",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "strapi": "^3.6.11",
-    "strapi-plugin-multi-select": "^1.2.3",
-    "styled-components": "5.3.3"
-  },
-  "name": "my-app-name",
+  "name": "my-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -26,11 +9,23 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.24.2",
+    "@strapi/plugin-users-permissions": "4.24.2",
+    "@strapi/plugin-i18n": "4.24.2",
+    "@strapi/plugin-cloud": "4.24.2",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "template": "blog"
+    "uuid": "7d79a33b-11dc-4c89-925f-b3befb9188a1"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
