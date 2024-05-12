@@ -15,26 +15,26 @@
     "name": {
       "type": "string"
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "type": {
       "type": "customField",
       "options": [
-        "Vegan: טבעוני",
-        "Gluten Free: Gluten Free",
         "Vegetarian: צמחוני",
-        "Dairy Free: ללא חלב",
-        "Egg Free: ללא ביצים",
-        "Peanut Free: ללא בוטנים",
-        "Nut Free: ללא אגוזים",
-        "Soy Free: ללא סויה",
-        "Fish Free: ללא דגים",
-        "Kosher: כשר",
-        "Halal: חלאל",
-        "Paleo: פלאו",
-        "Keto: קטו",
-        "Suitable for Diabetics: מתאים לסוכרתיים",
-        "Low Carb: מעט פחמימות",
-        "High Protein: עשיר בחלבונים",
-        ""
+        "Vegan: טבעוני",
+        "Meaty: בשרי",
+        "Dietetic: דיאטטי",
+        "Family-Friendly: משפחתי",
+        "Quick and Easy: מהיר וקל"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
@@ -64,40 +64,16 @@
       "type": "richtext"
     },
     "preparation_time": {
-      "type": "date"
+      "type": "time"
     },
     "Total_time": {
-      "type": "date"
+      "type": "time"
     },
-    "Nutritional_values": {
+    "select_Nutritional_values": {
       "displayName": "nutritional_values",
       "type": "component",
       "repeatable": false,
       "component": "nutritional-values.nutritional-values"
-    },
-    "date_start": {
-      "type": "date"
-    },
-    "date_end": {
-      "type": "date"
-    },
-    "preferences": {
-      "type": "customField",
-      "options": [
-        "Vegetarian: צמחוני",
-        "Vegan: טבעוני",
-        "Meaty: בשרי",
-        "Dietetic: דיאטטי",
-        "Family-Friendly: משפחתי",
-        "Quick and Easy: מהיר וקל"
-      ],
-      "customField": "plugin::multi-select.multi-select"
-    },
-    "Howtomake": {
-      "displayName": "How-to-make",
-      "type": "component",
-      "repeatable": true,
-      "component": "how-to-make.how-to-make"
     },
     "difficulty": {
       "type": "string"

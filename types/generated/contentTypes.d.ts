@@ -375,27 +375,17 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
+    image: Attribute.Media;
     type: Attribute.JSON &
       Attribute.CustomField<
         'plugin::multi-select.multi-select',
         [
-          'Vegan: \u05D8\u05D1\u05E2\u05D5\u05E0\u05D9',
-          'Gluten Free: Gluten Free',
           'Vegetarian: \u05E6\u05DE\u05D7\u05D5\u05E0\u05D9',
-          'Dairy Free: \u05DC\u05DC\u05D0 \u05D7\u05DC\u05D1',
-          'Egg Free: \u05DC\u05DC\u05D0 \u05D1\u05D9\u05E6\u05D9\u05DD',
-          'Peanut Free: \u05DC\u05DC\u05D0 \u05D1\u05D5\u05D8\u05E0\u05D9\u05DD',
-          'Nut Free: \u05DC\u05DC\u05D0 \u05D0\u05D2\u05D5\u05D6\u05D9\u05DD',
-          'Soy Free: \u05DC\u05DC\u05D0 \u05E1\u05D5\u05D9\u05D4',
-          'Fish Free: \u05DC\u05DC\u05D0 \u05D3\u05D2\u05D9\u05DD',
-          'Kosher: \u05DB\u05E9\u05E8',
-          'Halal: \u05D7\u05DC\u05D0\u05DC',
-          'Paleo: \u05E4\u05DC\u05D0\u05D5',
-          'Keto: \u05E7\u05D8\u05D5',
-          'Suitable for Diabetics: \u05DE\u05EA\u05D0\u05D9\u05DD \u05DC\u05E1\u05D5\u05DB\u05E8\u05EA\u05D9\u05D9\u05DD',
-          'Low Carb: \u05DE\u05E2\u05D8 \u05E4\u05D7\u05DE\u05D9\u05DE\u05D5\u05EA',
-          'High Protein: \u05E2\u05E9\u05D9\u05E8 \u05D1\u05D7\u05DC\u05D1\u05D5\u05E0\u05D9\u05DD',
-          ''
+          'Vegan: \u05D8\u05D1\u05E2\u05D5\u05E0\u05D9',
+          'Meaty: \u05D1\u05E9\u05E8\u05D9',
+          'Dietetic: \u05D3\u05D9\u05D0\u05D8\u05D8\u05D9',
+          'Family-Friendly: \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9',
+          'Quick and Easy: \u05DE\u05D4\u05D9\u05E8 \u05D5\u05E7\u05DC'
         ]
       >;
     Allergens: Attribute.JSON &
@@ -421,24 +411,9 @@ export interface ApiRecipeRecipe extends Schema.CollectionType {
         ]
       >;
     About_recipe: Attribute.RichText;
-    preparation_time: Attribute.Date;
-    Total_time: Attribute.Date;
-    Nutritional_values: Attribute.Component<'nutritional-values.nutritional-values'>;
-    date_start: Attribute.Date;
-    date_end: Attribute.Date;
-    preferences: Attribute.JSON &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        [
-          'Vegetarian: \u05E6\u05DE\u05D7\u05D5\u05E0\u05D9',
-          'Vegan: \u05D8\u05D1\u05E2\u05D5\u05E0\u05D9',
-          'Meaty: \u05D1\u05E9\u05E8\u05D9',
-          'Dietetic: \u05D3\u05D9\u05D0\u05D8\u05D8\u05D9',
-          'Family-Friendly: \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9',
-          'Quick and Easy: \u05DE\u05D4\u05D9\u05E8 \u05D5\u05E7\u05DC'
-        ]
-      >;
-    Howtomake: Attribute.Component<'how-to-make.how-to-make', true>;
+    preparation_time: Attribute.Time;
+    Total_time: Attribute.Time;
+    select_Nutritional_values: Attribute.Component<'nutritional-values.nutritional-values'>;
     difficulty: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
