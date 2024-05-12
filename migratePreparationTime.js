@@ -1,6 +1,9 @@
-// migratePreparationTime.js
+module.exports = async ({ strapi }) => {
+  if (!strapi) {
+    console.error("Strapi instance is undefined");
+    return;
+  }
 
-module.exports = async () => {
   const knex = strapi.db.connection;
 
   try {
