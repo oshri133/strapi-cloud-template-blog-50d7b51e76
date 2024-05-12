@@ -71,6 +71,12 @@
     },
     "difficulty": {
       "type": "string"
+    },
+    "prepare_time": {
+      "type": "time"
+    },
+    "total_time": {
+      "type": "time"
     }
   }
 }
