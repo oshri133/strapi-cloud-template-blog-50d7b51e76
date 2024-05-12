@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_nutritional_values_nutritional_values",
+  "info": {
+    "displayName": "nutritional_values",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "select_Nutritional_values": {
+      "type": "customField",
+      "options": [
+        "Calories: קלוריות",
+        "Fat: שומן",
+        "Saturated Fat: שומן רווי",
+        "Trans Fat: טרנס",
+        "Omega-3 Fatty Acids: אומגה 3",
+        "Cholesterol: כולסטרול",
+        "Sodium: נתרן",
+        "Potassium: פוטסיום",
+        "Carbohydrates: פחמימות",
+        "Sugars: סוכרים",
+        "Added Sugars: סוכרים מוספים",
+        "Dietary Fiber: סיבים תזונתיים",
+        "Protein: חלבונים",
+        "Vitamin A: ויטמין A",
+        "Vitamin C: ויטמין C",
+        "Calcium: סידן",
+        "Iron: ברזל",
+        "Vitamin D: ויטמין D",
+        "Magnesium: מגנזיום",
+        ""
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "value": {
+      "type": "float"
+    },
+    "unit": {
+      "type": "string"
+    }
+  }
+}

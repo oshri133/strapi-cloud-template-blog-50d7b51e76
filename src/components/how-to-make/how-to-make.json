@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_how_to_make_how_to_makes",
+  "info": {
+    "displayName": "How-to-make"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "full_text": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

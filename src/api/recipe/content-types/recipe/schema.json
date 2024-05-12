@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "customField",
+      "options": [
+        "Vegan: טבעוני",
+        "Gluten Free: Gluten Free",
+        "Vegetarian: צמחוני",
+        "Dairy Free: ללא חלב",
+        "Egg Free: ללא ביצים",
+        "Peanut Free: ללא בוטנים",
+        "Nut Free: ללא אגוזים",
+        "Soy Free: ללא סויה",
+        "Fish Free: ללא דגים",
+        "Kosher: כשר",
+        "Halal: חלאל",
+        "Paleo: פלאו",
+        "Keto: קטו",
+        "Suitable for Diabetics: מתאים לסוכרתיים",
+        "Low Carb: מעט פחמימות",
+        "High Protein: עשיר בחלבונים",
+        ""
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Allergens": {
+      "type": "customField",
+      "options": [
+        "Nuts: אגוזים",
+        "Milk: חלב",
+        "Gluten: גלוטן",
+        "Eggs: ביצים",
+        "Soy: סויה",
+        "Fish: דגים",
+        "Crustaceans: קרוסטציאנים",
+        "Celery: סלרי",
+        "Mustard: חרדל (Note: \"סולר\" might have been intended to be \"חרדל\" which is mustard, as \"סולר\" typically refers to diesel fuel)",
+        "Sesame: שומשום",
+        "Wheat: חיטה",
+        "Pistachio: פיסטוק",
+        "Almonds: שקדים",
+        "Peanuts: בוטנים",
+        "Coconut: קוקוס",
+        "Legumes: קטניות"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "About_recipe": {
+      "type": "richtext"
+    },
+    "preparation_time": {
+      "type": "date"
+    },
+    "Total_time": {
+      "type": "date"
+    },
+    "Nutritional_values": {
+      "displayName": "nutritional_values",
+      "type": "component",
+      "repeatable": false,
+      "component": "nutritional-values.nutritional-values"
+    },
+    "date_start": {
+      "type": "date"
+    },
+    "date_end": {
+      "type": "date"
+    },
+    "preferences": {
+      "type": "customField",
+      "options": [
+        "Vegetarian: צמחוני",
+        "Vegan: טבעוני",
+        "Meaty: בשרי",
+        "Dietetic: דיאטטי",
+        "Family-Friendly: משפחתי",
+        "Quick and Easy: מהיר וקל"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Howtomake": {
+      "displayName": "How-to-make",
+      "type": "component",
+      "repeatable": true,
+      "component": "how-to-make.how-to-make"
+    },
+    "difficulty": {
+      "type": "string"
+    }
+  }
+}
