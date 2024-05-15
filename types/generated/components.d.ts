@@ -4,6 +4,7 @@ export interface HowToMakeHowToMake extends Schema.Component {
   collectionName: 'components_how_to_make_how_to_makes';
   info: {
     displayName: 'How-to-make';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -17,6 +18,7 @@ export interface IngredientsAndqUantityIngredientsAndQuantity
   collectionName: 'components_ingredients_andq_uantity_ingredients_and_quantities';
   info: {
     displayName: 'Ingredients and quantity';
+    description: '';
   };
   attributes: {
     image: Attribute.Media;

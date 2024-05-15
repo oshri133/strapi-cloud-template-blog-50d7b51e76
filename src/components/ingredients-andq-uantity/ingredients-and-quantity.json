@@ -1,19 +1,21 @@
 {
   "collectionName": "components_ingredients_andq_uantity_ingredients_and_quantities",
   "info": {
-    "displayName": "Ingredients and quantity"
+    "displayName": "Ingredients and quantity",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Ingredients": {
       "type": "string"
