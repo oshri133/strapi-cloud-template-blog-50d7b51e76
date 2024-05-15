@@ -6,9 +6,15 @@
   },
   "options": {},
   "attributes": {
-    "select_Nutritional_values": {
-      "type": "customField",
-      "options": [
+    "value": {
+      "type": "float"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "select": {
+      "type": "enumeration",
+      "enum": [
         "Calories: קלוריות",
         "Fat: שומן",
         "Saturated Fat: שומן רווי",
@@ -27,16 +33,8 @@
         "Calcium: סידן",
         "Iron: ברזל",
         "Vitamin D: ויטמין D",
-        "Magnesium: מגנזיום",
-        ""
-      ],
-      "customField": "plugin::multi-select.multi-select"
-    },
-    "value": {
-      "type": "float"
-    },
-    "unit": {
-      "type": "string"
+        "Magnesium: מגנזיום"
+      ]
     }
   }
 }
